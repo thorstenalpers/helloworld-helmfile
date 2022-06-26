@@ -1,0 +1,7 @@
+---
+# Ordered list of releases.
+helmfiles:
+  - "releases/elasticsearch/helmfile.yaml"
+  - "releases/kibana/helmfile.yaml"
+  - "releases/rabbitmq/helmfile.yaml"
+  - "releases/nginx/helmfile.yaml"

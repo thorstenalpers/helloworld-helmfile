@@ -1,0 +1,15 @@
+---
+bases:
+  - ../../commons/environments.yaml
+---
+releases:
+  - name: "elasticsearch"
+    namespace: {{ .Values.Namespace }}
+    labels:
+      chart: "elasticsearch"
+      repo: "elastic"
+    chart: "elastic/elasticsearch"
+    version: "7.12.0"
+    wait: true
+    values:
+      - values.yaml
